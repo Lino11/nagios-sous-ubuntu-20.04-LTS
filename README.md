@@ -12,5 +12,26 @@ Télécharger et installer Nagios-4.4.6
 # make install-groups-users
 # usermod -a -G nagios www-data
 # make install
-# 
+# make install-init
+# make install-commandmode
+# make install-config
+# make install-webconf
+# a2enmod rewrite
+# a2enmod cgi
+# systemctl restart apache2
+# htpasswd -c /usr/local/nagios/etc/htpasswd.users admin
+
+Installation de Nagios Plugins
+# wget https://nagios-plugins.org/download/nagios-plugins-2.3.3.tar.gz
+# tar -zxvf nagios-plugins-2.3.3.tar.gz
+# cd nagios-plugins-2.3.3/
+# ./configure --with-nagios-user=nagios --with-nagios-group=nagios
+# make
+# make install
+
+Verification de la configuration Nagios
+# /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+# systemctl start nagios
+# systemctl enable nagios
+
 
