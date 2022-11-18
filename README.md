@@ -51,7 +51,6 @@ sudo systemctl enable nagios
 ```
 sudo nano /usr/local/nagios/etc/servers/host.cfg
 ```
-***
 voici un exemple très simple du contenue de Host.cfg
 ```
 define host {
