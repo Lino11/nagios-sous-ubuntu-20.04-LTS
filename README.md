@@ -51,10 +51,6 @@ sudo systemctl enable nagios
 ```
 sudo nano /usr/local/nagios/etc/servers/host.cfg
 ```
-<<<<<<< HEAD
-***
-=======
->>>>>>> 4e96821e45580b0043e0a36d077fdadcfa3e8c39
 voici un exemple très simple du contenue de Host.cfg
 ```
 define host {
@@ -69,12 +65,9 @@ define host {
 }
 ```
 ### redemmarer Nagios
-<<<<<<< HEAD
 ```
 sudo service nagios reload
 ```
 
-=======
-sudo service nagios reload
->>>>>>> 4e96821e45580b0043e0a36d077fdadcfa3e8c39
+
 
