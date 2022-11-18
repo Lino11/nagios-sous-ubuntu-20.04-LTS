@@ -1,7 +1,9 @@
-# nagios-sous-ubuntu-20.04-LTS
-Mise à jour
-# apt-get update
-Installation des dependances
+# nagios4.4.6-sous-ubuntu-20.04-LTS
+## Mise à jour
+```
+sudo apt-get update
+```
+## Installation des dependances
 # sudo apt install wget unzip curl openssl build-essential libgd-dev libssl-dev libapache2-mod-php php-gd php apache2 -y
 Télécharger et installer Nagios-4.4.6
 # wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.6.tar.gz
